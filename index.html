@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
     <link href="css/common.css" rel="stylesheet" />
     <link href="css/home.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -49,13 +50,20 @@
 
         <form id="search-form">
             <div class="input-group city-search">
-                <input type="text" class="form-control input-city" id='city' name='city' placeholder="Enter your city to search for PGs" />
-                <div class="input-group-append">
-                    <button type="submit" class="btn btn-secondary">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-            </div>
+            <select class="form-control input-city" id="city" name="city" required>
+                <option value="" disabled selected>Select your city</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+            </select>
+        <div class="input-group-append">
+            <button type="submit" class="btn btn-secondary">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+</div>
+
         </form>
     </div>
 
@@ -65,7 +73,7 @@
         </h1>
         <div class="row">
             <div class="city-card-container col-md">
-                <a href="property_list.html">
+                <a href="delhi.html">
                     <div class="city-card rounded-circle">
                         <img src="img/delhi.png" class="city-img" />
                     </div>
@@ -73,7 +81,7 @@
             </div>
 
             <div class="city-card-container col-md">
-                <a href="property_list.html">
+                <a href="mumbai.html">
                     <div class="city-card rounded-circle">
                         <img src="img/mumbai.png" class="city-img" />
                     </div>
@@ -81,7 +89,7 @@
             </div>
 
             <div class="city-card-container col-md">
-                <a href="property_list.html">
+                <a href="banglore.html">
                     <div class="city-card rounded-circle">
                         <img src="img/bangalore.png" class="city-img" />
                     </div>
@@ -89,7 +97,7 @@
             </div>
 
             <div class="city-card-container col-md">
-                <a href="property_list.html">
+                <a href="hyderabad.html">
                     <div class="city-card rounded-circle">
                         <img src="img/hyderabad.png" class="city-img" />
                     </div>
@@ -231,16 +239,16 @@
         <div class="page-container footer-container">
             <div class="footer-cities">
                 <div class="footer-city">
-                    <a href="property_list.html">PG in Delhi</a>
+                    <a href="delhi.html">PG in Delhi</a>
                 </div>
                 <div class="footer-city">
-                    <a href="property_list.html">PG in Mumbai</a>
+                    <a href="mumbai.html">PG in Mumbai</a>
                 </div>
                 <div class="footer-city">
-                    <a href="property_list.html">PG in Bangalore</a>
+                    <a href="banglore.html">PG in Bangalore</a>
                 </div>
                 <div class="footer-city">
-                    <a href="property_list.html">PG in Hyderabad</a>
+                    <a href="hyderabad.html">PG in Hyderabad</a>
                 </div>
             </div>
             <div class="footer-copyright">© 2020 Copyright PG Life </div>
@@ -249,6 +257,11 @@
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+   
+</button>
+
 </body>
 
 </html>
